@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Series de TV</title>
+        <link rel="stylesheet" href="src/css/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+
+    <body class="principal-body">
+        <!--Encabezado De La Página-->
+        <header class="header-series">
+            <div class="container">
+                <h1 class="text-center mb-0">Series de TV</h1>
+            </div>
+        </header>
+        <!--Fin Encabezado De La Página-->
+
+        <div class="container">
+            <div class="row">
+                <!--Tabla De Series-->
+                <div class="col-md-8">
+                    <table class="table table-hover table-danger">
+
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Plataforma</th>
+                                <th scope="col">Temporadas</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="seriesTableContent" class="table-group-divider">
+                            <!-- Las filas se agregarán con TypeScript -->
+                        </tbody>
+
+                        <tfoot id="seriesTableFoot" class="table-group-divider">
+                            <!--Foot de promedio se agregará con TypeScript-->
+                        </tfoot>
+
+                    </table>
+                </div>
+                <!--Fin Tabla Series-->
+
+                <!--Tarjeta Informativa-->
+                <div id="seriesCardDetailContent" class="col-md-4">
+                    
+                </div>
+                <!--Fin Tarjeta Informativa-->
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+        <script type="module" src="./scripts/main.js"></script>
+        
+    </body>
+
+</html>
